@@ -1,6 +1,6 @@
 <template>
   <div class="portrait__container">
-    <img ref="portrait" src="/jag.png" alt="Porträtt" class="portrait">
+    <img ref="portrait" srcset="/jag.png, /jag@2x.png 2x" src="/jag.png" alt="Porträtt" class="portrait">
     <div class="block__container">
       <div class="heading__container">
         <div class="subheading__container">
@@ -37,7 +37,7 @@
     left: 0;
     right: 0;
     width: 100%;
-    top: -22%;
+    top: -277px;
     z-index: -10;
     position: absolute;
   }
@@ -48,7 +48,7 @@
   box-shadow: 0 44px 99px var(--blueshadow);
   width: 100%;
   text-align: center;
-  padding: 6rem 2rem 6rem 2rem;
+  padding: 6rem 3rem 6rem 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -13,13 +13,15 @@
     <div class="projectgrid">
       <div v-for="project in projects" :key="project.id" class="project">
         <div class="project__image">
-          <picture>
-            <source type="image/webp" :srcset="'projects/' + project.image + '.webp, projects/' + project.image + '@2x.webp 2x'">
-            <img :srcset="'projects/' + project.image + '.jpg, projects/' + project.image + '@2x.jpg 2x'" :src="project.image" :alt="project.title">
-          </picture>
+          <a :href="project.url" target="_blank">
+            <picture>
+              <source type="image/webp" :srcset="'projects/' + project.image + '.webp, projects/' + project.image + '@2x.webp 2x'">
+              <img :srcset="'projects/' + project.image + '.jpg, projects/' + project.image + '@2x.jpg 2x'" :src="project.image" :alt="project.title">
+            </picture>
+          </a>
         </div>
         <div class="project__content">
-          <h3><a :href="project.url">{{ project.title }}</a></h3>
+          <h3><a :href="project.url" target="_blank">{{ project.title }}</a></h3>
           <nuxt-content :document="project" />
           <div class="tags">
             <div v-for="tag in project.tags" :key="tag.id" class="tag">
@@ -31,7 +33,7 @@
     </div>
     <div class="behance__container">
       <h3><a href="https://www.behance.net/nydahl">Jag har mer grejer på Behance, kolla gärna där!</a></h3>
-      <a href="https://www.behance.net/nydahl"><img src="behance.svg" alt="behance logo"></a>
+      <a href="https://www.behance.net/nydahl" target="_blank"><img src="behance.svg" alt="behance logo"></a>
     </div>
   </div>
 </template>
