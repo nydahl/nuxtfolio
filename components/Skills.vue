@@ -138,6 +138,18 @@
       transition: transform 400ms cubic-bezier(0.72, -0.6, 0.37, 1.58);
     }
   }
+  .heading__container {
+    margin-bottom: 8rem;
+  }
+  .subheading {
+    font-size: 2.4rem;
+  }
+  .subheading__container {
+  margin-bottom: 3rem;
+  padding: 0;
+  }
+}
+@media (min-width: 900px) {
   .skillgrid {
     display: grid;
     width: 100%;
@@ -156,17 +168,8 @@
   .skill__content {
     text-align: left;
   }
-  .heading__container {
-    margin-bottom: 8rem;
-  }
-  .subheading {
-    font-size: 2.4rem;
-  }
-  .subheading__container {
-  margin-bottom: 3rem;
-  padding: 0;
-  }
 }
+
 </style>
 
 <script>

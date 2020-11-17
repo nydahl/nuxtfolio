@@ -69,6 +69,8 @@ export default {
   right: 1rem;
   z-index: 100;
   user-select: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
   &:focus {
     outline: none;
   }
@@ -169,10 +171,12 @@ export default {
     min-height: 75vh;
     align-items: flex-start;
   }
+}
+@media (min-width: 900px) {
   #themeswitch {
     position: absolute;
     top: 2rem;
-    right: 0;
+    right: 2rem;
     &:hover svg #yellow {
       opacity: .5;
     }

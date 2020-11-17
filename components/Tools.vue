@@ -70,7 +70,7 @@
   }
 }
 
-  @media (min-width: 767px) {
+  @media (min-width: 900px) {
   .toolgrid {
     grid-template-columns: 1fr 1fr;
       margin-left: -4rem;
