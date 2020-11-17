@@ -50,6 +50,9 @@
   align-items: flex-start;
 }
 .project__content {
+  a {
+    color: var(--peach);
+  }
   h3 {
     text-transform: initial;
     margin-bottom: 1rem;
@@ -57,6 +60,16 @@
       text-decoration: none;
       color: var(--darkblue);
       display: inline-block;
+      &:after {
+        content: "BESÖK";
+        font-family: var(--heading);
+        color: var(--peach);
+        transition: all 400ms ease-out;
+        font-size: 1.4rem;
+        letter-spacing: 2px;
+        margin-left: 1rem;
+        display: inline-block;
+      }
     }
   }
   p {
@@ -118,15 +131,12 @@
     h3 {
       a {
       &:after {
-        content: "BESÖK";
-        font-family: var(--heading);
-        color: var(--peach);
         opacity: 0;
         transition: all 400ms ease-out;
-        font-size: 1.4rem;
         letter-spacing: 0;
         transform: translateX(0);
         display: inline-block;
+        margin-left: 0;
       }
       &:hover:after {
         letter-spacing: 2px;

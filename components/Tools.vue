@@ -84,6 +84,7 @@
   }
   .tool {
     flex-flow: row nowrap;
+    align-items: flex-start;
   }
   .tool__image {
     margin-right: 2rem;
