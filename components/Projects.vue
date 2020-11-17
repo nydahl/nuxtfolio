@@ -62,6 +62,7 @@
       text-decoration: none;
       color: var(--darkblue);
       display: inline-block;
+      transition: color 300ms ease-in-out;
       &:after {
         content: "BESÖK";
         font-family: var(--heading);
@@ -91,9 +92,10 @@
   padding: .4rem .8rem;
   margin-right: 1rem;
   background-color: var(--darkblue);
-  color: white;
+  color: var(--white);
   border-radius: 2rem;
   letter-spacing: 1px;
+  transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
 }
 .project__image {
   margin-bottom: 2rem;
@@ -107,7 +109,7 @@
   background-color: var(--peach);
   margin-bottom: -12rem;
   margin-top: 8rem;
-  width: calc(100% + 4rem);
+  width: calc(100% + 6rem);
   padding: 4rem 6rem;
   h3 {
     a {

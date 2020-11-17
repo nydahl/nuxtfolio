@@ -37,13 +37,13 @@
     left: 0;
     right: 0;
     width: 100%;
-    top: -277px;
+    top: -55vh;
     z-index: -10;
     position: absolute;
   }
 }
 .block__container {
-  background-color: white;
+  background-color: var(--white);
   border-radius: 4px;
   box-shadow: 0 44px 99px var(--blueshadow);
   width: 100%;
@@ -53,6 +53,7 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 14rem;
+  transition: background-color 300ms ease-in-out;
 }
 .heading__container {
   display: flex;
@@ -74,6 +75,7 @@
     display: block;
     height: 2px;
     background-color: var(--darkblue);
+    transition: background-color 300ms ease-in-out;
     &:last-child {
       margin-left: 2rem;
     }
@@ -90,6 +92,7 @@
   letter-spacing: 12px;
   font-size: 1.8rem;
   display: block;
+  transition: color 300ms ease-in-out;
 }
 
 .skillgrid {
@@ -108,6 +111,7 @@
   filter: drop-shadow(0 10px 10px var(--greenshadow));
   margin-right: 0;
   margin-bottom: 3rem;
+  transition: filter 300ms ease-in-out;
 }
 .skill__content {
   text-align: center;
