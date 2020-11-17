@@ -32,8 +32,11 @@
   position: relative;
   margin-top: 14rem;
   .portrait {
-    width: 100%;
+    margin: 0 auto;
+    max-width: 410px;
     left: 0;
+    right: 0;
+    width: 100%;
     top: -22%;
     z-index: -10;
     position: absolute;
@@ -122,6 +125,8 @@
       transform: translate3d(30px, -138px, 0px) rotate3d(0, 0, 1, 11deg);
     }
     .portrait {
+      width: unset;
+      left: unset;
       position: absolute;
       top: -277px;
       right: 70px;
